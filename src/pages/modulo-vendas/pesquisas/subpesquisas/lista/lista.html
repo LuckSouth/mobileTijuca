@@ -1,0 +1,78 @@
+<ion-header>
+
+    <ion-navbar color="tijuca">
+        <ion-title class="titulo"> Lista de Produtos </ion-title>
+        <ion-buttons end>
+            <ion-icon name="refresh" (click)="sadc()" class="refresh"></ion-icon>
+        </ion-buttons>
+    </ion-navbar>
+
+    <div class="search">
+        <ion-searchbar (ionInput)="getItems($event)" placeholder="Buscar"></ion-searchbar>
+    </div>
+
+
+</ion-header>
+
+<ion-content pading>
+
+    <ion-card>
+
+        <ion-item (click)="linkar()" >
+            <ion-card-content> 011 - OVO SUPER EXTRA BRANCO C/30</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 012 - OVO EXTRA BRANCO C/30</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 013 - OVO GRANDE BRANCO C/30</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 014 - OVO MEDIO BRANCO C/30</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 015 - OVO PEQUENO BRANCO C/30</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 016 - OVO INDUSTRIAL BRANCO C/30</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 021 - OVO SUPER EXTRA VERMELHO C/30</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 023 - OVO GRANDE VERMELHO C/30</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 024 - OVO MEDIO VERMELHO C/30</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 025 - OVO INDUSTRIAL VERMELHO C/30</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 026 - OVO INDUSTRIAL 3</ion-card-content>
+        </ion-item>
+
+
+        <ion-item>
+            <ion-card-content> 032 - OVO INDUSTRIAL 6</ion-card-content>
+        </ion-item>
+
+        <ion-item>
+            <ion-card-content> 033 - OVO INDUSTRIAL 7</ion-card-content>
+        </ion-item>
+
+    </ion-card>
+
+
+
+</ion-content>

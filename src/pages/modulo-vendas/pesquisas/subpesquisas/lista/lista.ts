@@ -1,20 +1,23 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { StorageProvider } from '../../../../../providers/storage/storage';
-import { ListaPage } from '../lista/lista';
-
+import { PesquisaPage } from './pesquisa/pesquisa'
 
 @IonicPage()
 @Component({
-  selector: 'page-subprodutos',
-  templateUrl: 'subprodutos.html',
+  selector: 'page-lista',
+  templateUrl: 'lista.html',
 })
-export class SubprodutosPage {
+export class ListaPage {
 
-  constructor(
-    public navCtrl: NavController,
-    public storage: StorageProvider, 
-    public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad PesquisasPage');
+  }
+
+  linkar(){
+    this.navCtrl.push(PesquisaPage)
   }
 
   items: any[];
@@ -52,10 +55,6 @@ export class SubprodutosPage {
       })
 
     }
-  }
-
-  pequisa(){
-    this.navCtrl.push(ListaPage)
   }
 
 }

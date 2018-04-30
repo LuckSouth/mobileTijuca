@@ -55,6 +55,8 @@ import { FinanceiroPage } from '../pages/modulo-vendas/clientes/venda/financeiro
 import { PedidoPage } from '../pages/modulo-vendas/clientes/venda/pedido/pedido';
 import { InformacoesPage } from '../pages/modulo-vendas/clientes/venda/informacoes/informacoes';
 import { DetalhePage } from '../pages/modulo-vendas/pedidos/visualizar/detalhe/detalhe';
+import { ListaPage } from '../pages/modulo-vendas/pesquisas/subpesquisas/lista/lista'
+import { PesquisaPage } from '../pages/modulo-vendas/pesquisas/subpesquisas/lista/pesquisa/pesquisa'
 @NgModule({ 
   declarations: [
     MyApp, 
@@ -86,7 +88,9 @@ import { DetalhePage } from '../pages/modulo-vendas/pedidos/visualizar/detalhe/d
     PedidoPage,
     InformacoesPage,
     TabelasPage,
-    DetalhePage
+    DetalhePage,
+    ListaPage,
+    PesquisaPage
   ],
   imports: [
     BrowserModule,
@@ -129,7 +133,9 @@ import { DetalhePage } from '../pages/modulo-vendas/pedidos/visualizar/detalhe/d
     PedidoPage,
     InformacoesPage,
     TabelasPage,
-    DetalhePage
+    DetalhePage,
+    ListaPage,
+    PesquisaPage
   ],
   providers: [
     StatusBar,
